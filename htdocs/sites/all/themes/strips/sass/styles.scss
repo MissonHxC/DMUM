@@ -226,16 +226,8 @@ a {
     display: none;
   }
 
-  .captcha {
-    margin: 0 0 10px 0;
-    border: none;
-    padding: 0;
-
-    legend,
-    .fieldset-description,
-    .description {
-      display: none;
-    }
+  input[type="submit"] {
+    margin-top: 7px;
   }
 }
 
