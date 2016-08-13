@@ -3,8 +3,7 @@ version: '2'
 services:
   # web with xdebug - dropteam images
   web:
-    # dropteam/drupal-php available tags: 5.6-apache, 7.0-apache
-    image: dropteam/drupal-php:5.6-apache
+    image: actency/docker-apache-php:5.6
 
     ports:
       - "${PORT_WEB}:80"
