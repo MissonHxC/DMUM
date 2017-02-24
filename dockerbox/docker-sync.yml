@@ -1,0 +1,12 @@
+version: "2"
+
+options:
+  verbose: true
+syncs:
+  #IMPORTANT: ensure this name is unique and does not match your other application container name
+  dmum_sync_1: # tip: add -sync and you keep consistent names als a convention
+    src: './../'
+    dest: '/var/www'
+    sync_excludes: ['.DS_Store', '.idea', '.git', '.gitignore']
+    # example on how to let the files be owned by uid 33, thats the apache user
+    sync_userid: '33'
